@@ -30,6 +30,7 @@ export const server = setupServer(
                   name: 'Track Artist',
                 },
               ],
+              duration_ms: '00:01:00',
               external_urls: {
                 spotify: 'Spotify URL',
               },
@@ -58,15 +59,6 @@ describe('Create Playlist should be render', () => {
   });
   afterAll(() => server.close());
 
-  it('Should render tracks after search', async () => {
-    const buttonSearch = screen.getByLabelText('search-button');
-
-    userEvent.click(buttonSearch);
-
-    await screen.findByText('Track Title');
-    expect(screen.getByText('Track Title')).toBeInTheDocument();
-  });
-
   it('Should render track items after search', async () => {
     const searchInput = screen.getByLabelText('search-input');
     const buttonSearch = screen.getByLabelText('search-button');
@@ -79,11 +71,13 @@ describe('Create Playlist should be render', () => {
     const imageTrack = screen.getByLabelText('image-track');
     const titleTrack = screen.getByLabelText('title-track');
     const artistTrack = screen.getByLabelText('artist-track');
+    const duration = screen.getByLabelText('duration-track');
     const btnTrack = screen.getByLabelText('button-track');
 
     expect(imageTrack).toBeInTheDocument();
     expect(titleTrack).toBeInTheDocument();
     expect(artistTrack).toBeInTheDocument();
+    expect(duration).toBeInTheDocument();
     expect(btnTrack).toBeInTheDocument();
   });
 });
