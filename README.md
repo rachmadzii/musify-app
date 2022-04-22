@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Musify
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Musify App is Spotify clone, that consume Spotify API to search tracks and create a playlist in your Spotify account. Also my final project submission for Generasi GIGIH.
 
-## Available Scripts
+## Screenshots
 
-In the project directory, you can run:
+<center><img src="/docs/images/Login.png" alt="Preview Image" /></center>
+<center><img src="/docs/images/Home.png" alt="Preview Image" /></center>
+<center><img src="/docs/images/Playlist-nodata.png" alt="Preview Image" /></center>
+<center><img src="/docs/images/Search-tracks.png" alt="Preview Image" /></center>
+<center><img src="/docs/images/Selected-tracks.png" alt="Preview Image" /></center>
+<center><img src="/docs/images/Create-playlist.png" alt="Preview Image" /></center>
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🚪 Login for authorize Spotify account
+- 🔍 Search tracks
+- 🎵 Tracks ➡️ image, title, artist, duration, button, and link redirect to Spotify
+- 🎶 Create playlists ➡️ add multiple selected tracks
+- 👤 User profile ➡️ avatar and display name
+- 🏃‍♀️ Logout Spotify account
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+- Clone the project
+  ```bash
+     git clone https://github.com/rachmadzii/musify-app.git
+  ```
+- Go to the project directory
+  ```bash
+     cd musify-app
+  ```
+- Install dependencies
+  ```bash
+     npm install
+  ```
+- Set up the environment variables
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  `REACT_APP_API_KEY` contains Spotify Client ID
 
-### `npm run build`
+- Start the server
+  ```bash
+     npm start
+  ```
+- Open `http://localhost:3000` with your browser to see the result
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Testing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run `npm test` for launches the test runner in the interactive watch mode.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Feedback
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any feedback, you can create issue(s) [here](https://github.com/rachmadzii/musify-app/issues)
