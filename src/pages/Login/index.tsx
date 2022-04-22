@@ -57,13 +57,18 @@ const Login: React.FC = () => {
       h={'100vh'}
       align={'center'}
       justify={'center'}
-      p={{ sm: '0px', md: '24px' }}
+      p={{ sm: '8px', md: '32px' }}
     >
-      <Center w={'50%'}>
-        <Image src={image} alt={'Media Player'} boxSize={'400px'} m={0} />
+      <Center w={{ base: '70%', md: '50%' }}>
+        <Image
+          src={image}
+          alt={'Media Player'}
+          boxSize={{ base: '300px', md: '400px' }}
+          m={0}
+        />
       </Center>
-      <Box w={'50%'}>
-        <Heading as={'h3'} size="lg" my={4}>
+      <Box w={{ base: '70%', md: '50%' }}>
+        <Heading as={'h3'} size="lg">
           Musify, the Spotify clone
         </Heading>
         <Text fontSize={'xl'} my={4}>
