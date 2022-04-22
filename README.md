@@ -48,6 +48,10 @@ Musify App is Spotify clone, that consume Spotify API to search tracks and creat
 
 Run `npm test` for launches the test runner in the interactive watch mode.
 
+## Additional Info
+
+This project is refactoring of my previous Spotify App Generasi GIGIH homework [here](https://github.com/rachmadzii/homework-musify-app)
+
 ## Feedback
 
 If you have any feedback, you can create issue(s) [here](https://github.com/rachmadzii/musify-app/issues)
